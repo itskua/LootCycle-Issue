@@ -1,0 +1,52 @@
+name: Bug report
+description: Report a bug in LootCycle
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: server-software
+    attributes:
+      label: Server software
+      options:
+        - Paper
+        - Folia
+        - Purpur
+        - Leaf
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: server-version
+    attributes:
+      label: Server / Minecraft version
+      placeholder: "Paper 26.3 build 177"
+    validations:
+      required: true
+
+  - type: input
+    id: plugin-version
+    attributes:
+      label: LootCycle version
+      placeholder: "1.0.2"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console logs / config
+      render: text

@@ -1,0 +1,10 @@
+name: Feature request
+description: Request a feature for LootCycle
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: What you want added or changed
+    validations:
+      required: true
